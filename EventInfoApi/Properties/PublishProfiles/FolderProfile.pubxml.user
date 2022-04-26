@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Published\EventInfoApi</_PublishTargetUrl>
+    <History>True|2021-12-01T10:06:15.4774808Z;True|2021-12-01T15:33:01.5010621+05:30;True|2021-12-01T15:25:02.2341531+05:30;True|2021-12-01T15:24:32.0781461+05:30;True|2021-12-01T15:00:34.9536202+05:30;True|2021-12-01T14:52:22.7084192+05:30;True|2021-12-01T14:43:04.2266867+05:30;False|2021-12-01T14:42:17.6740552+05:30;True|2021-12-01T14:34:05.5850211+05:30;</History>
+  </PropertyGroup>
+</Project>
