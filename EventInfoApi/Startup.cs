@@ -91,11 +91,26 @@ namespace EventInfoApi
             {
                 endpoints.MapControllers();
             });
-            app.UseSwagger();
+            // app.UseSwagger();
+
+            app.UseSwagger(c =>
+            {
+                c.SerializeAsV2 = true;
+            });
+
+
+
             app.UseSwaggerUI(c =>
             {
+                c.DefaultModelsExpandDepth(-1);
+#if DEBUG
+                // For Debug in Kestrel
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "EventInfoAPI v1");
-                // c.RoutePrefix = string.Empty;
+#else
+                                    // To deploy on IIS
+                    c.SwaggerEndpoint("swagger/v1/swagger.json", "EventInfoAPI v1");
+#endif
+                c.RoutePrefix = string.Empty;
             });
 
         }
